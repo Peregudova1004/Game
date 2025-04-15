@@ -1,4 +1,5 @@
-using Game.Views;
+using System;
+using System.Windows.Forms;
 
 namespace Game
 {
@@ -9,7 +10,7 @@ namespace Game
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new Views.MainForm());
         }
     }
 }

@@ -9,7 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resourses\" />
+    <None Remove="Resourses\background.png" />
+    <None Remove="Resourses\garden.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resourses\background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resourses\garden.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
